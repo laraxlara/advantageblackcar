@@ -1,0 +1,74 @@
+<mjml>
+  <mj-body background-color="#d18c9b" width="100%">
+    <mj-section background-color="#e6dfe0" padding="0">
+      <mj-column width="100%">
+        <mj-image
+          src="http://landing.adobe.com/dam/global/images/adobe-logo.420x110.png"
+          alt="Adobe Logo"
+          width="108px"
+          padding-top="50px"
+        ></mj-image>
+      </mj-column>
+    </mj-section>
+
+    <mj-section background-color="#ffffff" padding-bottom="60px">
+      <mj-column width="100%">
+        <mj-text
+          color="#EB1000"
+          font-size="28px"
+          line-height="30px"
+          padding-top="65px"
+        >
+          <strong>Ime:</strong> {{name}}
+        </mj-text>
+
+        <mj-text
+          color="#505050"
+          font-size="18px"
+          line-height="26px"
+          padding-top="40px"
+          mj-if="{{surname}}"
+        >
+          <strong>Prezime:</strong> {{surname}}
+        </mj-text>
+
+        <mj-text
+          color="#505050"
+          font-size="18px"
+          line-height="26px"
+          padding-top="40px"
+          mj-if="{{email}}"
+        >
+          <strong>Poslato sa email-a:</strong> {{email}}
+        </mj-text>
+
+        <mj-text
+          color="#505050"
+          font-size="18px"
+          line-height="26px"
+          padding-top="40px"
+          mj-if="{{phone}}"
+        >
+          <strong>Broj telefona:</strong> {{phone}}
+        </mj-text>
+
+        <mj-text
+          color="#505050"
+          font-size="18px"
+          line-height="26px"
+          padding-top="40px"
+          mj-if="{{message}}"
+        >
+          <strong>Poruka:</strong> {{message}}
+        </mj-text>
+
+        <mj-text
+          color="#747474"
+          font-size="16px"
+          line-height="20px"
+          padding-top="40px"
+        ></mj-text>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>
